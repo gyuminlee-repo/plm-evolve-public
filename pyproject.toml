@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plm_evolve"
+version = "0.1.0"
+description = "Independent implementation of the EVOLVEpro core principle: frozen PLM embeddings + top-layer RandomForest active-learning loop for experimental directed evolution."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "plm-evolve contributors" }]
+keywords = ["protein", "directed-evolution", "language-model", "active-learning", "esm2", "esmc"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "biopython",
+    "torch",
+    "transformers",
+    "openpyxl",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+esmc = ["esm"]
+viz = ["matplotlib"]
+
+[project.scripts]
+plm-evolve = "plm_evolve.cli:main"
+
+[project.urls]
+Repository = "https://github.com/gyuminlee-repo/plm-evolve-public"
+
+[tool.setuptools.packages.find]
+include = ["plm_evolve*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

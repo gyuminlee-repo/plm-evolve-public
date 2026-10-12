@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it together with the EVOLVEpro method it reimplements."
+title: plm-evolve
+abstract: >-
+  Independent implementation of the EVOLVEpro core principle: frozen protein
+  language model embeddings feeding a top-layer RandomForest active-learning
+  loop for experimental directed evolution, with a research layer of
+  acquisition, batch-diversity, multi-mutant, and multi-objective capabilities.
+type: software
+authors:
+  - name: "the plm-evolve contributors"
+license: MIT
+keywords:
+  - protein
+  - directed-evolution
+  - protein-language-model
+  - active-learning
+  - esm2
+  - esmc
+references:
+  - type: article
+    title: "Rapid in silico directed evolution by a protein language model with EVOLVEpro"
+    authors:
+      - family-names: Jiang
+        given-names: Kaiyi
+    year: 2025
+    journal: Science
+    doi: 10.1126/science.adr6006
+  - type: article
+    title: "Evolutionary-scale prediction of atomic-level protein structure with a language model"
+    authors:
+      - family-names: Lin
+        given-names: Zeming
+    year: 2023
+    journal: Science
+    doi: 10.1126/science.ade2574
+  - type: software
+    title: "ESM-C (ESM Cambrian)"
+    authors:
+      - name: "EvolutionaryScale"
+    year: 2024
+    notes: "Frozen PLM backend (esmc_300m / esmc_600m), accessed via the esm SDK."

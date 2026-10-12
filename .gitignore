@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.venv/
+
+# Validation run artifacts (regenerable: embedding caches, FASTAs, result CSVs).
+# The durable record is scripts/ + the committed results note.
+outputs/
+
+# Runtime junk (tool-generated marker/state/scratch)
+.loophaus/
+.gjc/
+.claude/state/
+.codex-review-passed
+.last-cleanup
+*.bak
+*.bak2
+notes/handoffs/
+notes/handover/

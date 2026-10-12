@@ -1,0 +1,82 @@
+{
+  "kelsic": {
+    "n": 500,
+    "pool": 405,
+    "baseline": 22.3,
+    "ESM-2 650M": {
+      "precision_at_95": 35.6,
+      "se": 0.89,
+      "enrichment": 13.3
+    },
+    "ESM-C 300M": {
+      "precision_at_95": 42.5,
+      "se": 0.74,
+      "enrichment": 20.2
+    },
+    "delta": 6.9
+  },
+  "stiffler": {
+    "n": 350,
+    "pool": 255,
+    "baseline": 35.4,
+    "ESM-2 650M": {
+      "precision_at_95": 56.1,
+      "se": 0.69,
+      "enrichment": 20.7
+    },
+    "ESM-C 300M": {
+      "precision_at_95": 63.7,
+      "se": 0.54,
+      "enrichment": 28.3
+    },
+    "delta": 7.6
+  },
+  "giacomelli": {
+    "n": 350,
+    "pool": 255,
+    "baseline": 35.4,
+    "ESM-2 650M": {
+      "precision_at_95": 46.6,
+      "se": 0.66,
+      "enrichment": 11.2
+    },
+    "ESM-C 300M": {
+      "precision_at_95": 47.5,
+      "se": 0.46,
+      "enrichment": 12.1
+    },
+    "delta": 0.9
+  },
+  "cas12f": {
+    "n": 350,
+    "pool": 255,
+    "baseline": 35.4,
+    "ESM-2 650M": {
+      "precision_at_95": 45.0,
+      "se": 0.57,
+      "enrichment": 9.6
+    },
+    "ESM-C 300M": {
+      "precision_at_95": 45.7,
+      "se": 0.48,
+      "enrichment": 10.3
+    },
+    "delta": 0.7
+  },
+  "brenan": {
+    "n": 350,
+    "pool": 255,
+    "baseline": 35.4,
+    "ESM-2 650M": {
+      "precision_at_95": 36.4,
+      "se": 0.77,
+      "enrichment": 1.0
+    },
+    "ESM-C 300M": {
+      "precision_at_95": 38.7,
+      "se": 0.77,
+      "enrichment": 3.3
+    },
+    "delta": 2.3
+  }
+}
